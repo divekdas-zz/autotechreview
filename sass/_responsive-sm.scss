@@ -1,0 +1,89 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+    body{
+        font-family: $base-font;
+        font-weight: normal;
+    }
+    .mainOuter{
+        padding: 15px 0;
+    }
+    .button01{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .navbar{
+        .search{
+            width: 240px;
+            @include transition(0.3s ease-in-out);
+            &:focus{
+                width: 300px;
+                background: lighten($primary-color, 5%);
+            }
+        }
+        .navbar-collapse{
+            right: 15px;
+            width: 100%;
+        }
+    }
+    .productSlide{
+        position: relative;
+        .productPrice{
+            width: 215px;
+            position: absolute;
+            right: 15px;
+            top: 15px; 
+            padding: 15px;
+            background: rgba(darken($primary-color, 32%), 0.5);
+            .price{
+                font-size: 28px;
+            }
+        }
+        .button01, .button02{
+            height: 42px;
+            display: block;
+            width: 100%;
+            font-size: 15px;
+            padding: 10px 25px;
+        }
+    }
+    .productHead{
+        font-size: 24px;
+    }
+    
+    .productDetails{
+        padding: 15px 20px;
+    }
+    .subHead{
+        text-align: left;
+        font-size: 24px;
+    }
+    .productOverview{
+        margin-bottom: 20px;
+        .nav {
+            @include border-radius(0);
+            li{
+                a{
+                    color: $black;
+                    text-transform: uppercase;
+                    border-bottom: none;
+                    @include border-radius(0);
+                }
+                &.active{
+                    a{
+                        color: $primary-color;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            padding: 15px 20px;
+            border: solid 1px lighten($black, 80%);
+            border-top: none;
+            color: lighten($black, 35%);
+        }
+    }
+    .productVideo {
+        margin-bottom: 20px;
+    }
+}

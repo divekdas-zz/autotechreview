@@ -1,0 +1,81 @@
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+    .navbar{
+        .navbar-header{
+            padding: 20px 0 20px 15px;
+            float: none;
+        }
+        .navbar-collapse{
+            position: relative;
+            right: 0;
+            background: lighten($primary-color, 8%);
+            li{
+                .dropDown{
+                    height: auto;
+                    width: 400px;
+                    background: $white;
+                    a{
+                        color: lighten($black, 50%);
+                        padding: 8px 20px;
+                        font-size: 13px;
+                        width: 49.5%;
+                        display: inline-block;
+                        border-bottom: solid 1px lighten($black, 95%);
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+            a{
+                color: $white;
+                border-bottom: none;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+            i{
+                font-size: 10px;
+                line-height: 20px;
+                margin-left: 10px;
+                opacity: 0.5;
+            }
+        }
+        .dropDown{
+            position: absolute;
+        }
+        .navbar-brand{
+            font-size: 55px;
+            height: 40px;
+        }
+        .search{
+            background: $white;
+            height: 40px;
+            color: lighten($black, 50%);
+            &:focus{
+                background: $white;
+            }
+        }
+        .searchBlock {
+            .icon-search{
+                font-size: 22px;
+                right: 5px;
+                top: 8px;
+                color: $primary-color;
+            }
+        }
+        .containerSec{
+            width: 100%;
+            padding: 0;
+        }
+        .containerNav{
+            width: 1170px;
+            margin: 0px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .mainOuter{
+        padding: 20px 0;
+    }
+}
